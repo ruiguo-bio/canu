@@ -667,10 +667,10 @@ sub configureAssembler () {
         setGlobalIfUndef("batMemory",   "32-256");      setGlobalIfUndef("batThreads",   "4-16");
 
     } elsif (getGlobal("genomeSize") < adjustGenomeSize("5g")) {
-        setGlobalIfUndef("batMemory",   "128-512");     setGlobalIfUndef("batThreads",   "8-32");
+        setGlobalIfUndef("batMemory",   "128-256");     setGlobalIfUndef("batThreads",   "8-32");
 
     } else {
-        setGlobalIfUndef("batMemory",   "256-1024");    setGlobalIfUndef("batThreads",   "16-64");
+        setGlobalIfUndef("batMemory",   "128-256");    setGlobalIfUndef("batThreads",   "16-64");
     }
 
     #  Finally, use all that setup to pick actual values for each component.
