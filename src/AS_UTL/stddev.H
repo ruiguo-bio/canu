@@ -338,12 +338,12 @@ public:
 
   vector<uint64>    &histogram(void) {    //  Returns pointer to private histogram data
     finalizeData();
-    return(&_histogram);
+    return(_histogram);
   };
 
   vector<uint64>    &Nstatistics(void) {  //  Returns pointer to private N data
     finalizeData();
-    return(&_Nstatistics);
+    return(_Nstatistics);
   };
 
   void               finalizeData(void) {
